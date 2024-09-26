@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>KRS STORE</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="link">Login</div>
+                <div class="form">
+                    <div class="header">
+                        <h2>login</h2>
+                    </div>
+                    <div class="body">
+                        <form action="">
+                            <input type="email" placeholder="Email adress" class="field">
+                            <input type="password" placeholder="password" class="field">
+                            <div class="options">
+                                <input type="checkbox" name="" class="remember">Remember me
+                                <a href="" class="forgot">Forgot password</a>                          
+                            </div>
+                            <button>login</button>
+                        </form>
+                    </div>
+                    <div class="footer">
+                        <span>not a member?</span>
+                        <a href="" >Signup now</a>
+                    </div>
+                </div>
+        </div>
+        <script>
+            const linkEle=document.querySelector('.link');
+            const formEle=document.querySelector('.form');
+            linkEle.onclick=function(){
+                formEle.classlist.toggle('show')
+            }
+        </script>
+    </body>
+
